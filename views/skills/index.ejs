@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Developer Skills</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1>Developer Skills</h1>
+<%- include('../partials/header') %>
     <ul>
       <% skills.forEach(function(s) { %>
           <li>
@@ -13,5 +6,6 @@
           </li>
       <% }); %>
     </ul>
-  </body>
-</html>
+    <a href="/skills/new">Add Skill</a>
+<%- include('../partials/footer') %>
+
